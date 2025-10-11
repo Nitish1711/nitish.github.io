@@ -1,0 +1,54 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #061826, #2b5876);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.card {
+  background: linear-gradient(135deg,#00f5ff,#8E2DE2);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.skill-node {
+  background: #00f5ff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  color: #001010;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-node:hover {
+  transform: scale(1.2);
+  background: #8E2DE2;
+}
