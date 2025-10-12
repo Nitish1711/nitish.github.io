@@ -1,37 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nitish Mahajan Portfolio</title>
+  <title>Nitish Mahajan | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="hero">
-    <h1 id="typing"></h1>
-    <p>Full Stack Developer | AI & Cloud Enthusiast</p>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section class="experience">
-    <div class="card">
-      <h2>Nitish Mahajan</h2>
-      <p>Backend Developer • Cloud Enthusiast</p>
-      <ul>
-        <li>Production Monitoring Dashboards (Dynatrace)</li>
-        <li>API Optimization — latency reduced 30–50%</li>
-        <li>Java, Spring Boot, Node.js, GCP</li>
-      </ul>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-intro">
+        <span class="greeting">Hello, I'm</span>
+        <h1 class="name">Nitish Mahajan</h1>
+        <h2 class="title">Full Stack Developer</h2>
+        <p class="description">Specializing in Spring Boot microservices and React.js, with experience delivering customer-facing analytics platforms in Commercial Banking. Skilled in building secure, scalable REST APIs and deploying cloud-native applications on GCP.</p>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Technologies Mastered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Companies Worked</span>
+        </div>
+      </div>
+
+      <div class="hero-highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">🏦</span>
+          <span>Commercial Banking</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">☁️</span>
+          <span>GCP Certified</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🚀</span>
+          <span>Microservices Expert</span>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a href="#contact" class="btn primary">Let's Connect</a>
+        <a href="#projects" class="btn secondary">View My Work</a>
+        <a href="mailto:nitishmahajan121212@gmail.com?subject=Lets Connect for Future Project" class="email">📧 nitishmahajan121212@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="floating-elements">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+      </div>
+      <div class="code-snippet">
+        <pre><code>const developer = {
+  name: 'Nitish Mahajan',
+  skills: ['Java', 'React.js', 'Spring Boot'],
+  passion: 'Innovation'
+};</code></pre>
+      </div>
+    </div>
+
+    <div class="planet-glow"></div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
     </div>
   </section>
 
-  <section class="skills">
-    <div class="skill-node">Java</div>
-    <div class="skill-node">React</div>
-    <div class="skill-node">Node.js</div>
-    <div class="skill-node">SQL</div>
-    <div class="skill-node">GCP</div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="about-text">Full Stack Developer specializing in Spring Boot microservices and React.js, with experience delivering customer-facing analytics platforms in the Commercial Banking sector. Skilled in building secure, scalable REST APIs, optimizing JVM performance, and deploying cloud-native applications on GCP. Passionate about clean architecture, agile delivery, and solving data-driven business problems.</p>
+      <div class="about-cards">
+        <div class="card">
+          <h4>🏦 Banking Analytics</h4>
+          <p>Experience in Commercial Banking customer analytics platforms.</p>
+        </div>
+        <div class="card gradient">
+          <h4>☁️ Cloud Native</h4>
+          <p>Deploying scalable applications on GCP with Kubernetes and Istio.</p>
+        </div>
+        <div class="card">
+          <h4>🚀 Performance Optimization</h4>
+          <p>Optimizing JVM performance and reducing API latency by 30-50%.</p>
+        </div>
+        <div class="card">
+          <h4>🔧 Full Stack Expertise</h4>
+          <p>Building end-to-end solutions with Java Spring Boot backend and React.js frontend.</p>
+        </div>
+        <div class="card gradient">
+          <h4>🌐 API Design</h4>
+          <p>Designing secure, scalable REST APIs with Swagger and OpenAPI specifications.</p>
+        </div>
+        <div class="card">
+          <h4>📈 Agile Delivery</h4>
+          <p>Delivering high-quality software through agile methodologies and CI/CD pipelines.</p>
+        </div>
+        <div class="card gradient">
+          <h4>🧠 Fast Learning Skills</h4>
+          <p>Quickly adapting to new technologies and frameworks to deliver innovative solutions.</p>
+        </div>
+        <div class="card">
+          <h4>💳 Fintech Experience</h4>
+          <p>Developing secure financial applications with compliance and regulatory standards.</p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="card-icon">⚙️</div>
+            <h3>Software Developer</h3>
+            <span class="company">Lloyds Technology Centre</span>
+            <span class="date">Dec 2023 - Present</span>
+            <span class="location">Hyderabad</span>
+          </div>
+          <div class="card-details">
+            <ul>
+              <li>Developed scalable microservices in Java Spring Boot using Clean Architecture, with Maven and Gradle</li>
+              <li>Designed high-performance REST APIs (Swagger, OpenAPI), reduced latency by 30–50% via WebClient asynchronous calls and Spring Cache</li>
+              <li>Centralized exception handling with custom error models for cleaner failure responses</li>
+              <li>Optimized data processing using Java Streams, improving efficiency in large datasets</li>
+              <li>Improved JVM performance by monitoring garbage-collection metrics, ensuring stability under load</li>
+              <li>Achieved 95%+ test coverage with JUnit and Mockito, supporting reliable CI/CD pipelines</li>
+              <li>Managed Kubernetes clusters with Istio for traffic routing, circuit-breaking, and observability</li>
+              <li>Monitored production systems via GCP Logs Explorer and Dataflow, tracking CPU utilization and latency</li>
+              <li>Gained full-stack exposure with React.js (Hooks, Redux) and Node.js/Express for API-driven UIs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="card-icon">🔧</div>
+            <h3>Full Stack Developer Internship</h3>
+            <span class="company">VibrantMinds Technologies Pvt. Ltd.</span>
+            <span class="date">Apr 2023 - Aug 2023</span>
+            <span class="location">Pune</span>
+          </div>
+          <div class="card-details">
+            <ul>
+              <li>Built CRUD apps in Eclipse with Java, Spring Boot, Hibernate & JDBC</li>
+              <li>Designed MVC REST APIs using JDBC</li>
+              <li>Enhanced UI/UX with JavaScript, HTML, and CSS, building interactive components</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="card-icon">💻</div>
+            <h3>Frontend Developer Internship</h3>
+            <span class="company">Synnex Softech Pvt. Ltd.</span>
+            <span class="date">Jan 2022 - Mar 2022</span>
+            <span class="location">Pune</span>
+          </div>
+          <div class="card-details">
+            <ul>
+              <li>Developed responsive web pages with HTML, CSS & Bootstrap on XAMPP</li>
+              <li>Created interactive UI templates simulating server interactions</li>
+              <li>Ensured cross-browser compatibility and responsive layouts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="education-item">
+          <div class="card-header">
+            <div class="card-icon">🎓</div>
+            <h3>Bachelor of Engineering in Electronics And Telecommunications</h3>
+            <span class="institution">Marathwada Mitra Mandal College of Engineering</span>
+            <span class="gpa">GPA: 8.78</span>
+            <span class="date">2019 - 2023</span>
+            <span class="location">Pune, Maharashtra</span>
+          </div>
+        </div>
+        <div class="education-item">
+          <div class="card-header">
+            <div class="card-icon">🎓</div>
+            <h3>HSC in Science</h3>
+            <span class="institution">Moolji Jaitha College</span>
+            <span class="gpa">GPA: 69.23</span>
+            <span class="date">2017 - 2019</span>
+            <span class="location">Jalgaon, Maharashtra</span>
+          </div>
+        </div>
+        <div class="education-item">
+          <div class="card-header">
+            <div class="card-icon">🎓</div>
+            <h3>SSC in School</h3>
+            <span class="institution">Orion English Medium School</span>
+            <span class="gpa">GPA: 84.20</span>
+            <span class="date">2015 - 2017</span>
+            <span class="location">Jalgaon, Maharashtra</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Technologies I Use</h2>
+      <div class="skills-grid">
+        <span class="skill-item">Java</span>
+        <span class="skill-item">JavaScript</span>
+        <span class="skill-item">SQL</span>
+        <span class="skill-item">React.js</span>
+        <span class="skill-item">Node.js</span>
+        <span class="skill-item">Express.js</span>
+        <span class="skill-item">Swagger</span>
+        <span class="skill-item">Jenkins</span>
+        <span class="skill-item">Postman</span>
+        <span class="skill-item">Git</span>
+        <span class="skill-item">OpenAPI</span>
+        <span class="skill-item">Jira</span>
+        <span class="skill-item">Sonar</span>
+        <span class="skill-item">AquaScan</span>
+        <span class="skill-item">MySQL</span>
+        <span class="skill-item">PostgreSQL</span>
+        <span class="skill-item">Google Cloud Spanner</span>
+        <span class="skill-item">GCP</span>
+        <span class="skill-item">CI/CD</span>
+        <span class="skill-item">Spinnaker</span>
+        <span class="skill-item">Harness</span>
+        <span class="skill-item">Kubernetes</span>
+        <span class="skill-item">Agile</span>
+        <span class="skill-item">Clean Architecture</span>
+        <span class="skill-item">SDLC</span>
+        <span class="skill-item">DSA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-bg"></div>
+          <div class="project-content">
+            <h3>Youtube Clone</h3>
+            <p>• Developed a secure authentication system with role-based routing, dynamic error handling, and password visibility toggle<br>• Implemented responsive SPA with React Router, protected routes, and global theme management using Context API<br>• Built interactive features like Like/Dislike/Save with persistent states, dynamic data rendering, and retry logic for APIs</p>
+            <button class="btn">View Project</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-bg"></div>
+          <div class="project-content">
+            <h3>React Projects</h3>
+            <p>• Built 25+ React.js projects (Todo App, Stopwatch, Notes App, Login Validation, etc.) demonstrating expertise in state management, props, conditional rendering, and event handling<br>• Designed reusable components and responsive UIs with modular architecture, enhancing user interaction and applying core React concepts for scalable front-end solutions</p>
+            <button class="btn">View Project</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-bg"></div>
+          <div class="project-content">
+            <h3>MCP Server & Client Development</h3>
+            <p>• Built an MCP server & client in Python with Claude AI integration using MCP SDK<br>• Developed document tools for content management and structured data access<br>• Designed reusable prompts for formatting, summarization, and workflow automation<br>• Applied clean architecture with async communication and robust error handling</p>
+            <button class="btn">View Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Ready to bring your ideas to life? Let's connect and discuss your next project.</p>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/nitish-mahajan-121212/" class="social-link">LinkedIn</a>
+        <a href="https://github.com/nitishmahajan121212" class="social-link">GitHub</a>
+        <a href="https://x.com/nitishmahajan12" class="social-link">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
