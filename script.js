@@ -181,10 +181,18 @@ document.querySelectorAll('.project-card').forEach(card => {
   });
 });
 
-// Form submission (placeholder)
+// Form submission with email
 document.querySelector('.contact-form form')?.addEventListener('submit', (e) => {
   e.preventDefault();
-  alert('Thank you for your message! I\'ll get back to you soon.');
+  const form = e.target;
+  const name = form.querySelector('input[type="text"]').value;
+  const email = form.querySelector('input[type="email"]').value;
+  const message = form.querySelector('textarea').value;
+
+  const subject = encodeURIComponent(`Message from ${name} - Portfolio Contact`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+  window.location.href = `mailto:nitishmahajan121212@gmail.com?subject=${subject}&body=${body}`;
 });
 
 // Counter animation for stats
