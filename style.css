@@ -463,18 +463,22 @@ section h2 {
 }
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
+  justify-content: center;
 }
+
 .experience-card {
   background: rgba(255,255,255,0.05);
   border-radius: 15px;
   border: 1px solid rgba(255,255,255,0.1);
-  overflow: hidden;
+  overflow: visible;
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .experience-card:hover {
   transform: translateY(-10px);
@@ -486,6 +490,7 @@ section h2 {
   background: linear-gradient(135deg, rgba(0,255,255,0.1), rgba(139,92,246,0.1));
   border-bottom: 1px solid rgba(255,255,255,0.1);
   text-align: center;
+  flex-shrink: 0;
 }
 .card-icon {
   font-size: 2rem;
@@ -521,22 +526,20 @@ section h2 {
   display: block;
 }
 .card-details {
-  padding: 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-.experience-card:hover .card-details {
-  max-height: 500px;
+  padding: 30px;
+  min-height: 600px;
+  overflow: visible;
+  flex-grow: 1;
 }
 .card-details ul {
   color: #bbb;
   padding-left: 20px;
   margin: 0;
+  list-style-type: disc;
 }
 .card-details ul li {
-  margin-bottom: 8px;
-  line-height: 1.4;
+  margin-bottom: 12px;
+  line-height: 1.6;
   font-size: 0.9rem;
 }
 
@@ -677,9 +680,34 @@ section h2 {
   border-color: #00ffff;
 }
 .project-bg {
-  height: 200px;
+  height: 250px;
   background: linear-gradient(45deg, #8b5cf6, #ec4899);
 }
+.youtube-clone .project-bg {
+  background-image: url('https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-light-theme-lg-output.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mcp-project .project-bg {
+  background-image: url('https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fa46l9irobhg0f5webscixp0bs%2Fpublic%2F1749849232%2F09_-_002_-_MCP_Clients_19.1749849231568.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.react-projects .project-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+.mcp-project .project-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .project-content {
   padding: 20px;
 }
@@ -687,9 +715,36 @@ section h2 {
   color: #00ffff;
   margin-bottom: 10px;
 }
+.project-content ul {
+  color: #bbb;
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+.project-content ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
 .project-content p {
   color: #bbb;
   margin-bottom: 20px;
+}
+.project-content .btn {
+  background: linear-gradient(45deg, #00ffff, #8b5cf6);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+  display: inline-block;
+}
+.project-content .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,255,255,0.5);
+  background: linear-gradient(45deg, #8b5cf6, #00ffff);
 }
 
 /* Contact */
