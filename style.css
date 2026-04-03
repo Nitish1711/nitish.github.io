@@ -683,6 +683,14 @@ section h2 {
   height: 250px;
   background: linear-gradient(45deg, #8b5cf6, #ec4899);
 }
+
+.bank-ai .project-bg {
+  background-image: url('assets/images/img_2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .youtube-clone .project-bg {
   background-image: url('https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-light-theme-lg-output.png');
   background-size: cover;
